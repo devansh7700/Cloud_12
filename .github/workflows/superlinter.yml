@@ -7,8 +7,9 @@ on:
       - dev
   pull_request:
 
-permissions: 
+permissions:
   contents: read
+
 jobs:
   build:
     name: Lint
@@ -27,6 +28,6 @@ jobs:
           persist-credentials: false
 
       - name: Super-linter
-        uses: super-linter/super-linter@v8.2.1 # x-release-please-version
+        uses: super-linter/super-linter@v8.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

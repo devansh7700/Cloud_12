@@ -28,6 +28,6 @@ jobs:
           persist-credentials: false
 
       - name: Super-linter
-        uses: super-linter/super-linter@2bdd90e
+        uses: super-linter/super-linter@2bdd90ed3262e023ac84bf8fe35dc480721fc1f2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
